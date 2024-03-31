@@ -28,6 +28,7 @@ vi <filename>
 mv <filename> <target directory>
 ```
 ## Ubuntu에서 C언어 코딩하기
+참고 블로그 [리눅스환경(Ubuntu)에서 C언어 코딩하기](https://ludeno-studying.tistory.com/38)
 ### 1. gcc 컴파일러 설치
 ```bash
 sudo su
