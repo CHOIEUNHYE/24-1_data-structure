@@ -1,6 +1,6 @@
 # 24-1_data-structure
 
-## Windows11에서 Ubuntu 환경 세팅
+## Windows11에서 리눅스 환경(Ubuntu) 세팅
 
 > 1. start menu -> Windows기능켜기/끄기 -> "Linux용 Windows 하위 시스템" 체크 -> Restart
 > 2. start menu -> Microsoft Store -> Search for "Ubuntu" -> Ubuntu 20.04 LTS 설치
@@ -27,9 +27,50 @@ vi <filename>
 ```bash
 mv <filename> <target directory>
 ```
----
+## Ubuntu에서 C언어 코딩하기
+### 1. gcc 컴파일러 설치
+```bash
+sudo su
+apt-get update
+apt-get install gcc
+```
+### 2. .c 파일 생성, 열기
+```bash
+vi <filename.c>
+```
+### 3. C언어 코딩하기
+파일이 열리면 간단한 편집기 화면이 나온다. `i`를 누르면 수정 모드로 들어가서 바로 코딩을 할 수 있다.
+작성을 마치면 `ESC`를 누르고 `:wq`입력하고 `enter`를 눌러서 초기 cmd 화면으로 돌아온다.
+
+### 4. 작성된 .c파일 확인하기
+```bash
+ls
+```
+작성한 .c파일을 포함하여 해당 디렉토리에 있는 파일 리스트가 출력된다.
+
+```bash
+cat <filename.c>
+```
+cmd 화면에서 바로 파일의 내용물을 확인할 수 있다.
+
+### 5. .c 파일 컴파일 하기
+```bash
+gcc <filename.c> -o <filename after compile>
+```
+
+### 6. 컴파일된 파일 실행하기
+```bash
+./<filename after compile>
+```
+파일의 실행 결과를 확인해본다. 무언가가 cmd창에 print됐거나 새로운 파일이 생겼거나 하는 변화가 있을 것이다.
 
 ## Windows 파일을 Linux 서버로 보내기
+참고 블로그
+
+>[SSH 접속 시 Permission denied (publickey)](https://typingdog.tistory.com/102)<br>
+>[우분투 SSH 설치 및 접속방법](https://velog.io/@thdrldud369/%EC%9A%B0%EB%B6%84%ED%88%AC-SSH-%EC%84%A4%EC%B9%98)<br>
+>[윈도우에서 리눅스 서버에 파일 전송하기](https://baekh-93.tistory.com/50)<br>
+>[리눅스 IP 확인 방법](https://bono915.tistory.com/entry/Linux-%EB%A6%AC%EB%88%85%EC%8A%A4-IP-%ED%99%95%EC%9D%B8-%EB%B0%A9%EB%B2%95)
 
 ## Ubuntu cmd에서 할 일
 ### 1. 저장소 업데이트 하기
